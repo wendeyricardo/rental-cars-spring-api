@@ -83,3 +83,28 @@ Diferenciais:
 - Logue as informações que achar pertinentes.
 - Trate os possíves erros de forma adequada.
 - Certifique-se que a aplicação esteja bem testada com testes unitários.
+
+
+Changelog:
+- Criado o controller AluguelRestController
+- Criada as entidades Aluguel e Cliente
+- Criada a classe ListarAlugueisDto
+- Criada a classe ListarCarrosQuery
+- Criada as classes AluguelRepository e ClienteRepository
+- Criada a classe AlguelService
+- Alterado o arquivo criacao_database para criar as entidades aluguel e cliente
+- Alterado o pom.xml para especificar a versão do spring security
+
+- Endpoints criados
+http://localhost:8080/api/alugueis
+http://localhost:8080/api/alugueis/processar
+http://localhost:8080/api/carros
+
+
+- Instale as dependências
+mvn clean install
+
+- Execute a aplicação em modo de desenvolvimento
+./mvnw spring-boot:run
+
+- O servidor inciará na porta:8080 mas se for necessário pode ser alterado no application.properties
